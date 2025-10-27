@@ -192,7 +192,6 @@ class Crtsh(object):
                     "\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0\xa0"
                 ):
                     split = certinfo[i].split("=")
-                    value = None
                     if len(split) > 1:
                         cert["subject"][split[0].strip()] = (
                             split[1].strip().replace("\xa0", " ")
